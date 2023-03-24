@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "netflixbind",
+  "version": "1.0",
+
+  "description": "Adds a next shortcut with key (n) on netflix",
+
+  "icons": {
+    "48": "icons/netflix.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/watch/*"],
+      "js": ["shortcut.js"]
+    }
+  ]
+}
